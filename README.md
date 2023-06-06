@@ -15,8 +15,8 @@ You should now be able to run the script as ```cmd> python bing-rewards.py```
 
 ## Automation (run when computer is not being used)
 1. Set file paths in bing-rewards.bat<br>
-  a. python.exe file path is most likely located in Appdata\Local\Programs\Python<br>
-2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.<br>
+  a. python.exe file path is most likely located in Appdata\Local\Programs\Python<br><br>
+2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.<br><br>
 3. Create a task in Windows Task Scheduler (Search Task Scheduler in Window's Search Bar)<br>
   a. Create a new task<br><br>
   b. General<br>
