@@ -19,19 +19,19 @@ You should now be able to run the script as ```cmd> python bing-rewards.py```
 2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.<br><br>
 3. Create a task in Windows Task Scheduler (Search Task Scheduler in Window's Search Bar)<br>
   a. Create a new task<br><br>
-  b. General<br>
+  b. **General**<br>
   ->   Run only when user is logged in (Active session)<br><br>
-  c. Triggers -> New<br>
+  c. **Triggers** -> New<br>
   ->   On a schedule<br>
   ->   Daily, recur every 1 days (I have it running at 3:00AM, task will run until completion)<br>
   ->   Disable all advanced settings<br><br>
-  d. Actions -> New<br>
+  d. **Actions** -> New<br>
   ->   Start a program<br>
   ->   Program/Script: "FILEPATH\TO\bing-rewards.bat"<br><br>
-  e. Contitions<br>
+  e. **Contitions**<br>
   ->   Start task only if the computer is idle for X minutes (I have it set for 1 minute)<br>
   ->   Wait for idle for 23 hours<br><br>
-  f. Settings<br>
+  f. **Settings**<br>
   ->   Allow task to be run on demand<br>
   ->   Run task as soon as possible after a scheduled start is missed<br>
   ->   If the running task does not end when requested, force it to stop
