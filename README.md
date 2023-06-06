@@ -15,23 +15,23 @@ You should now be able to run the script as ```cmd> python bing-rewards.py```
 
 ## Automation (run when computer is not being used)
 1. Set file paths in bing-rewards.bat<br>
-  a. python.exe file path is most likely located in Appdata\Local\Programs\Python<br><br>
+  1. python.exe file path is most likely located in Appdata\Local\Programs\Python<br><br>
 2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.<br><br>
 3. Create a task in Windows Task Scheduler (Search Task Scheduler in Window's Search Bar)<br>
-  a. Create a new task<br><br>
-  b. **General**<br>
-  ->   Run only when user is logged in (Active session)<br><br>
-  c. **Triggers** -> New<br>
-  ->   On a schedule<br>
-  ->   Daily, recur every 1 days (I have it running at 3:00AM, task will run until completion)<br>
-  ->   Disable all advanced settings<br><br>
-  d. **Actions** -> New<br>
-  ->   Start a program<br>
-  ->   Program/Script: "FILEPATH\TO\bing-rewards.bat"<br><br>
-  e. **Contitions**<br>
-  ->   Start task only if the computer is idle for X minutes (I have it set for 1 minute)<br>
-  ->   Wait for idle for 23 hours<br><br>
-  f. **Settings**<br>
-  ->   Allow task to be run on demand<br>
-  ->   Run task as soon as possible after a scheduled start is missed<br>
-  ->   If the running task does not end when requested, force it to stop
+  1. Create a new task<br><br>
+  2. **General**<br>
+    1. Run only when user is logged in (Active session)<br><br>
+  3. **Triggers** -> New<br>
+    1. On a schedule<br>
+    2. Daily, recur every 1 days (I have it running at 3:00AM, task will run until completion)<br>
+    3. Disable all advanced settings<br><br>
+  4. **Actions** -> New<br>
+    1. Start a program<br>
+    2. Program/Script: "FILEPATH\TO\bing-rewards.bat"<br><br>
+  5. **Contitions**<br>
+    1. Start task only if the computer is idle for X minutes (I have it set for 1 minute)<br>
+    2. Wait for idle for 23 hours<br><br>
+  6. **Settings**<br>
+    1. Allow task to be run on demand<br>
+    2. Run task as soon as possible after a scheduled start is missed<br>
+    3. If the running task does not end when requested, force it to stop
