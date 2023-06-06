@@ -14,25 +14,24 @@ This repo contains code to automate the collection of Microsoft rewards points v
 You should now be able to run the script as ```cmd> python bing-rewards.py```  
 
 ## Automation (run when computer is not being used)
-1. Set file paths in bing-rewards.bat
-  a. python.exe file path is most likely located in Appdata\Local\Programs\Python
-2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.
-3. Create a task in Windows Task Scheduler (Search Task Scheduler in Window's Search Bar)
-  a. Create a new task
-  b. General
-    i. Run only when user is logged in (Active session)
-  c. Triggers -> New
-    i.   On a schedule
-    ii.  Daily, recur every 1 days (I have it running at 3:00AM, task will run until completion)
-    iii. Disable all advanced settings
-  d. Actions -> New
-    i.   Start a program
-    ii.  Program/Script: "FILEPATH\TO\bing-rewards.bat"
-  e. Contitions
-    i.   Start task only if the computer is idle for X minutes (I have it set for 1 minute)
-    ii.  Wait for idle for 23 hours
-  f. Settings
-    i.   Allow task to be run on demand
-    ii.  Run task as soon as possible after a scheduled start is missed
+1. Set file paths in bing-rewards.bat<br>
+  a. python.exe file path is most likely located in Appdata\Local\Programs\Python<br>
+2. Set power and sleep settings -> time to sleep -> minimum 15 minutes.<br>
+3. Create a task in Windows Task Scheduler (Search Task Scheduler in Window's Search Bar)<br>
+  a. Create a new task<br>
+  b. General<br>
+    i. Run only when user is logged in (Active session)<br>
+  c. Triggers -> New<br>
+    i.   On a schedule<br>
+    ii.  Daily, recur every 1 days (I have it running at 3:00AM, task will run until completion)<br>
+    iii. Disable all advanced settings<br>
+  d. Actions -> New<br>
+    i.   Start a program<br>
+    ii.  Program/Script: "FILEPATH\TO\bing-rewards.bat"<br>
+  e. Contitions<br>
+    i.   Start task only if the computer is idle for X minutes (I have it set for 1 minute)<br>
+    ii.  Wait for idle for 23 hours<br>
+  f. Settings<br>
+    i.   Allow task to be run on demand<br>
+    ii.  Run task as soon as possible after a scheduled start is missed<br>
     iii. If the running task does not end when requested, force it to stop
-    
